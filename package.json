@@ -8,6 +8,7 @@
   },
   "dependencies": {
     "elasticsearch": "^3.1.3",
+    "jsai-servicemessage": "0.0.12",
     "lodash": "^3.0.1",
     "q": "^1.1.2"
   },

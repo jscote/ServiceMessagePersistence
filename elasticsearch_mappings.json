@@ -2,22 +2,52 @@
  * Created by jean-sebastiencote on 2/2/15.
  */
 {
-  "command": "POST / identifiers",
+  "command": "POST / servicemessages",
   "content": {
     "mappings": {
-      "supportedType": {
+      "message": {
         "properties": {
-          "identifierType": {
+          "id": {
             "type": "string"
           },
-          "abbreviation": {
+          "correlationId": {
             "type": "string"
+          },
+          "originalId": {
+            "type": "string"
+          },
+          "timestamp": {
+            "type": "string"
+          },
+          "transactionTimestamp": {
+            "type": "string"
+          },
+          "originalTimestamp": {
+            "type": "string"
+          },
+          "messageType" : {
+            "type" : "string"
           }
         }
       },
-      "identifier": {
+      "messageContext": {
         "properties": {
-          "identifier": {
+          "id": {
+            "type": "string"
+          },
+          "correlationId": {
+            "type": "string"
+          },
+          "originalId": {
+            "type": "string"
+          },
+          "timestamp": {
+            "type": "string"
+          },
+          "transactionTimestamp": {
+            "type": "string"
+          },
+          "originalTimestamp": {
             "type": "string"
           }
         }
