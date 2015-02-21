@@ -24,13 +24,17 @@ module.exports = {
         msg.update();
         test.done();
     },
-    handleResponseCreated_WhenCreatedFromMessage: function(test) {
+    handleResponseCreated_WhenCreatedFromMessage: function (test) {
         base.Configuration();
 
-        var msg = new serviceMessage.ServiceMessage();
-        var response = msg.createServiceResponseFrom();
-        response.data = {test: 'testResponse'};
-        response.update();
+        for (var i = 0; i < 210; i++) {
+            setTimeout(function () {
+                var msg = new serviceMessage.ServiceMessage();
+                var response = msg.createServiceResponseFrom();
+                response.data = {test: 'testResponse' + i};
+                response.update();
+            }, 1);
+        }
 
         test.done();
     }

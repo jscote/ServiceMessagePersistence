@@ -42,7 +42,10 @@
             body: body
         }).then(function () {
             client.close();
-        })
+        }).catch(function (error) {
+            client.close();
+            console.log(error);
+        });
 
     };
 
@@ -57,7 +60,10 @@
             body: msg.toJSON()
         }).then(function () {
             client.close();
-        })
+        }).catch(function (error) {
+            client.close();
+            console.log(error);
+        });
     };
 
 
