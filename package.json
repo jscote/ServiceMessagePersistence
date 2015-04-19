@@ -1,6 +1,6 @@
 {
   "name": "jsai-servicemessage-persistence",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "utility persistence service messages to elastic search.",
   "author": {
     "name": "Jean-Sebastien Cote",
@@ -8,7 +8,7 @@
   },
   "dependencies": {
     "elasticsearch": "^3.1.3",
-    "jsai-servicemessage": "0.0.13",
+    "jsai-servicemessage": "0.0.14",
     "lodash": "^3.3.0",
     "q": "^1.2.0"
   },
